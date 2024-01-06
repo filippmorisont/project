@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  -webkit-overflow-scrolling: touch;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #202035;
+  padding: 50px;
+}
+
+.component {
+  background-color: #1B1B30;
+  border-radius: 10px;
+}
+
+.component--help {
+  width: 750px;
+  padding: 40px 50px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+}
+
+.component--help h5 {
+  font-size: 36px;
+  font-weight: normal;
+  color: #BBBBD7;
+  margin-bottom: 25px;
+}
+
+.component--help form {
+  width: 100%;
+}
+
+.component--help form input {
+  width: 100%;
+  height: 72px;
+  border-radius: 15px;
+  padding: 0 40px 0 75px;
+  font-size: 18px;
+  border: 1px solid #454564;
+  background: #2A2A42 url("data:image/svg+xml,%0A%3Csvg fill='%23000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30px' height='30px'%3E%3Cpath d='M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z'/%3E%3C/svg%3E") no-repeat 25px;
+  color: #fff;
+}
+
+.component--help form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.component--help form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.component--help form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.component--help form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.deneme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.deneme .component--sidebar {
+  width: 307px;
+  padding: 30px;
+  margin-left: 150px;
+}
+
+.deneme .component--sidebar h6 {
+  font-size: 18px;
+  color: #BBBBD7;
+  margin-bottom: 15px;
+}
+
+.deneme .component--sidebar nav ul li a {
+  display: block;
+  font-size: 16px;
+  color: #786CD5;
+  padding: 6px 0;
+}
+
+.deneme .component--sidebar nav ul li a:hover {
+  color: #fff;
+}
+
+.deneme .component--sidebar hr {
+  background: #141428;
+  height: 2px;
+  margin: 25px 0;
+}
+
+.deneme .component--sidebar p {
+  font-size: 16px;
+  padding-right: 15px;
+  color: #BBBBD7;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.deneme .component--sidebar .button {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #786CD5;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.deneme .component--sidebar .button:hover {
+  background-color: #3f31aa;
+}
+
+.deneme .component--list {
+  width: 1000px;
+  margin-left: 50px;
+}
+
+.deneme .component--list li {
+  margin-bottom: 10px;
+}
+
+.deneme .component--list li:last-child {
+  margin-bottom: 0;
+}
+
+.deneme .component--list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1B1B30;
+  padding: 30px;
+  -webkit-transition: 200ms -webkit-transform ease-in-out;
+  transition: 200ms -webkit-transform ease-in-out;
+  transition: 200ms transform ease-in-out;
+  transition: 200ms transform ease-in-out, 200ms -webkit-transform ease-in-out;
+}
+
+.deneme .component--list li a .inner .title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #BBBBD7;
+  margin-bottom: 20px;
+}
+
+.deneme .component--list li a .inner .description {
+  line-height: 20px;
+  font-size: 16px;
+  color: #BBBBD7;
+}
+
+.deneme .component--list li a .category {
+  margin-left: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 18px;
+  border-radius: 36px;
+  color: var(--color);
+  position: relative;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.deneme .component--list li a .category::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color);
+  opacity: .05;
+}
+
+.deneme .component--list li a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+/*# sourceMappingURL=main.css.map */

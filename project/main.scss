@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    -webkit-overflow-scrolling: touch;
+    
+&:focus {
+    outline: 0;
+}
+}
+
+body {
+    background-color: #202035;
+    padding: 50px;
+}
+
+.component {
+    background-color: #1B1B30;
+    border-radius: 10px;
+
+    &--help {
+        width: 750px;
+        padding: 40px 50px;
+        margin-bottom: 50px;
+        margin-left: 150px;
+
+        h5 {
+            font-size: 36px;
+            font-weight: normal;
+            color: #BBBBD7;
+            margin-bottom: 25px;
+        }
+        form {
+            width: 100%;
+            input {
+                width: 100%;
+                height: 72px;
+                border-radius: 15px;
+                padding: 0 40px 0 75px;
+                font-size: 18px;
+                border: 1px solid #454564;
+                background: #2A2A42 url("data:image/svg+xml,%0A%3Csvg fill='%23000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30px' height='30px'%3E%3Cpath d='M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z'/%3E%3C/svg%3E") no-repeat 25px;
+                color: #fff;
+                &::placeholder {
+                    color: rgba(#fff, .6);
+                }
+            }
+        }
+    }
+
+}
+.deneme {
+    display: flex;
+    .component--sidebar {
+        width: 307px;
+        padding: 30px;
+        margin-left: 150px;
+        h6 {
+            font-size: 18px;
+            color: #BBBBD7;
+            margin-bottom: 15px;
+        }
+        nav {
+            ul {
+                li {
+                    a {
+                        display: block;
+                        font-size: 16px;
+                        color: #786CD5;
+                        padding: 6px 0;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        hr {
+            background: #141428;
+            height: 2px;
+            margin: 25px 0;
+        }
+        p {
+            font-size: 16px;
+            padding-right: 15px;
+            color: #BBBBD7;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        .button {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #786CD5;
+            font-size: 16px;
+            font-weight: bold;
+            color:#fff;
+            &:hover {
+                background-color: darken(#786CD5, 20%);
+            }
+        }
+    }
+
+    .component--list {
+        width: 1000px;
+        margin-left: 50px;
+       li {
+           margin-bottom: 10px;
+           &:last-child {
+               margin-bottom: 0;
+           }
+           a {
+               display: flex;
+               justify-content: space-between;
+               background-color: #1B1B30;  
+               padding: 30px;  
+               transition: 200ms transform ease-in-out;
+               
+               .inner {
+                   .title {
+                       display: block;
+                       font-size: 18px;
+                       font-weight: bold;
+                       color: #BBBBD7;
+                       margin-bottom: 20px;
+                   }
+                   .description {
+                       line-height: 20px;
+                       font-size: 16px;
+                       color: #BBBBD7;
+                   }
+               }
+
+               .category {
+                   margin-left: 40px;
+                   display: inline-flex;
+                   height: 36px;
+                   align-items: center;
+                   padding: 0 18px;
+                   border-radius: 36px;
+                   color: var(--color);
+                   position: relative;
+                   font-size: 16px;
+                   overflow: hidden;
+                   &::before {
+                       content: '';
+                       width: 100%;
+                       height: 100%;
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       background-color: var(--color);
+                       opacity: .05;
+                   }
+
+                   }
+                   &:hover {
+                    transform: scale(1.02);
+               }
+           }
+       } 
+    }
+}
